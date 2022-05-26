@@ -21,9 +21,13 @@ provider "aws" {
   region  = var.AWS_REGION
 }
 
+module "common_vars" {
+  source = "./mod"
+}
+
 # https://cloud-images.ubuntu.com/locator/ec2/
 resource "aws_instance" "app_server" {
-  ami           = "ami-0f29c8402f8cce65c"
+  ami           = module.common_vars.aws_instance_app_server_ami
   instance_type = "t2.micro"
 
   tags = {
