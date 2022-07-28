@@ -1,0 +1,23 @@
+{
+  "name": "learn-terraform",
+  "version": "1.0.0",
+  "description": "This playground will include a collection of simple examples of scripts for the Aws provider.",
+  "main": "api-function.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FiF0o/learn-terraform.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FiF0o/learn-terraform/issues"
+  },
+  "homepage": "https://github.com/FiF0o/learn-terraform#readme",
+  "devDependencies": {
+    "@stoplight/spectral-cli": "^6.4.1"
+  }
+}
