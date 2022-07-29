@@ -28,8 +28,8 @@ output "function_name" {
   value = aws_lambda_function.hello_world.function_name
 }
 
-# output "base_url" {
-#   description = "Base URL for API Gateway stage."
+output "base_url" {
+  description = "Base URL for API Gateway stage."
 
-#   value = aws_apigatewayv2_stage.lambda.invoke_url
-# }
+  value = aws_apigatewayv2_stage.lambda.invoke_url
+}
